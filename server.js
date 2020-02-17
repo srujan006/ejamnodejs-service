@@ -18,7 +18,8 @@ app.use(bodyParser.json());
 //logs requests
 app.use(morgan("tiny"));
 
-const port = 3003;
+let port = process.env.PORT;
+
 
 //Service listening on 3000 port
 app.listen(port, () => {

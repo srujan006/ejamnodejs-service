@@ -25,7 +25,6 @@ module.exports = {
         headers
       });
 
-      logger.info("data", result.data);
 
       if (result.status != 200) {
         throw result;
